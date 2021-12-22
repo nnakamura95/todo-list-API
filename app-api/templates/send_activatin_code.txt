@@ -1,0 +1,2 @@
+Please activate your account.
+Your verification code is: {{ verification_code }}

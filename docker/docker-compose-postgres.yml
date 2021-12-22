@@ -1,0 +1,13 @@
+version: '3'
+services:
+  todo-list-db:
+    image: postgres:13.4-alpine
+    container_name: todo-list-databse
+    environment:
+      POSTGRES_USER: todo-list
+      POSTGRES_PASSWORD: todo-list
+      POSTGRES_DB: todo-list
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./database/lib/data:/var/lib/postgresql/data
